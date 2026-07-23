@@ -25,8 +25,9 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+html{overflow-x:hidden}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
-  line-height:1.68;-webkit-font-smoothing:antialiased}
+  line-height:1.68;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:var(--teal-d);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -63,8 +64,8 @@ h1,h2,h3,h4{font-family:var(--disp);font-weight:400;line-height:1.15;letter-spac
   border-bottom:1px solid var(--line)}
 .hero-inner{padding-top:80px;padding-bottom:3rem;margin:0 auto;max-width:820px}
 .hero-mascot{max-width:150px;margin:0 auto 1.1rem}
-.hero-name{font-family:var(--disp);font-weight:600;font-size:clamp(2.6rem,6.5vw,4.2rem);
-  margin:0 0 .35rem;letter-spacing:.01em;color:var(--ink)}
+.hero-name{font-family:var(--disp);font-weight:600;font-size:clamp(1.9rem,7vw,4.2rem);
+  margin:0 0 .35rem;letter-spacing:.01em;color:var(--ink);overflow-wrap:break-word;max-width:100%}
 .hero-name .slash{color:var(--maroon)}
 .hero-tag{font-family:var(--disp);font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--maroon);
   letter-spacing:.04em;margin:.2rem 0 .7rem}
@@ -373,7 +374,7 @@ h1,h2,h3,h4{font-family:var(--disp);font-weight:400;line-height:1.15;letter-spac
   .about-photo img{max-width:280px}
 }
 @media (max-width:760px){
-  .burger{display:flex}
+  .burger{display:flex;order:-1}          /* menu button on the LEFT, brand on the right */
   .links{position:fixed;inset:68px 0 auto 0;flex-direction:column;gap:0;background:var(--bg);
     border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;box-shadow:var(--shadow)}
   body.open .links{transform:none}
