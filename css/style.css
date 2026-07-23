@@ -217,6 +217,11 @@ body.has-hero .nav{--sc:0;--navop:50%;--navblur:10px}
 .method h3{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
 .method .dev{font-family:var(--disp);font-size:.58rem;text-transform:uppercase;letter-spacing:.08em;
   color:#fff;background:var(--gold);padding:.14rem .5rem;border-radius:10px;white-space:nowrap;font-weight:600}
+.mgr-intro{display:flex;gap:1.4rem;align-items:center;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1.4rem 1.6rem;box-shadow:var(--shadow);margin-top:1.4rem}
+.mgr-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.mgr-text h3{font-size:1.3rem;margin:.15rem 0 .4rem}
+.mgr-text p{margin:0;color:var(--muted);font-size:.95rem}
 .doc-form{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
   padding:1.8rem;box-shadow:var(--shadow);margin-top:1.2rem}
 .doc-form label{display:block;font-family:var(--disp);font-weight:500;font-size:.85rem;
@@ -376,6 +381,7 @@ body.has-hero .nav{--sc:0;--navop:50%;--navblur:10px}
   .feat-grid,.feat-banner{grid-template-columns:1fr}
   .feat-banner .fb-media,.feat-banner.flip .fb-media{order:2}
   .methods,.doc-form .ff.two,.matherapy-grid{grid-template-columns:1fr}
+  .mgr-intro{flex-direction:column;text-align:center}
   .rs,.rs.alt{grid-template-columns:1fr;gap:1.4rem}.rs.alt .rs-media{order:0}
   .foot-right{text-align:left}.foot .social{justify-content:flex-start}
   .about-photo img{max-width:280px}
