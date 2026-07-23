@@ -7,7 +7,9 @@
   // very top, fully solid by ~200px. (Non-hero pages are solid by default in CSS.)
   var ticking = false;
   function apply() {
-    var t = Math.min((window.scrollY || 0) / 200, 1);
+    // ramp over ~70% of the viewport height so the fade is slow and matches the tall hero
+    var span = Math.max((window.innerHeight || 800) * 0.7, 240);
+    var t = Math.min((window.scrollY || 0) / span, 1);
     nav.style.setProperty('--sc', t.toFixed(3));
     ticking = false;
   }
