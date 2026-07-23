@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Scripta/Spectra Lab</title>
+<meta name="description" content="Scripta/Spectra Lab — Computational Analysis and Imaging for Cultural Heritage. Barak Sober, The Hebrew University of Jerusalem.">
+<link rel="icon" href="assets/img/favicon_mascot.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo_mascot.png" alt="" class="brand-mark">
+      <span class="brand-txt">Scripta<span class="slash">/</span>Spectra&nbsp;Lab</span>
+    </a>
+    <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links"><a class="" href="index.html">Home</a><a class="active" href="research.html">Research</a><a class="" href="imaging.html">Imaging Lab</a><a class="" href="publications.html">Publications</a><a class="" href="people.html">People</a><a class="" href="news.html">News</a><a class="" href="teaching.html">Teaching</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">What we work on</p><h1>Research</h1>
+  <p class="page-lead">From the geometry of high-dimensional data to ink on ancient sherds.</p>
+</div></section>
+
+<section class="section rs-list"><div class="wrap">
+<article class="rs  reveal" id="script-evolution">
+  <div class="rs-media "><img src="assets/img/script_evolution.png" alt="Ancient Script &amp; Text Evolution"></div>
+  <div class="rs-body">
+    <span class="rs-num">01</span>
+    <h2>Ancient Script &amp; Text Evolution</h2>
+    <p class="rs-tag">How and why writing changes over time — its letterforms, its language, and the societies behind it.</p>
+    
+<p>Our flagship program treats writing as something that <em>evolves</em> &mdash; through
+<strong>reproduction, variation, and selection</strong>: scribes copy existing signs, copies
+differ through unavoidable neuro-muscular noise, and cultural context, not conscious design,
+decides which variants persist. At the level of the individual letterform we use the kinematic
+(&Sigma;&Lambda;) theory of rapid human movement; at the level of whole corpora we use
+statistics and information theory to test how scripts, spellings, and styles shift across
+centuries.</p>
+<p>The work runs from Iron-Age Hebrew and Phoenician scribal schools (the &ldquo;Writing
+Through Time&rdquo; project, co-led with
+<a href="https://www.geschkult.fu-berlin.de/" target="_blank" rel="noopener">Christian Casey</a>,
+FU&nbsp;Berlin) to Egyptian and <strong>Akkadian</strong> literary traditions, and into the
+Hebrew Bible and Dead Sea Scrolls. A recurring theme is an <em>efficiency</em> law &mdash;
+grapheme complexity tracks information content, and the coupling tightens over time. Adjacent
+efforts include <strong>Reed-Pen Paleography</strong> (recovering the reed nib&rsquo;s geometry
+and grip angle as a scribal biometric) and the invited <em>Oxford Handbook</em> chapter on
+epigraphy and digital resources for Northwest-Semitic studies.</p>
+
+    <div class="kws"><span class="kw">Reproduction–Variation–Selection</span><span class="kw">ΣΛ kinematic model</span><span class="kw">Computational paleography</span><span class="kw">Stylometry & authorship</span><span class="kw">Information-theoretic efficiency</span></div>
+    <p class="rs-collab"><strong>Key collaborators:</strong> Christian Casey (FU Berlin) · Nathan Wasserman (HUJI) · Eli Piasetzky (TAU) · Israel Finkelstein (TAU)</p>
+    <p class="rs-fund"><strong>Funding &amp; support:</strong> Volkswagenstiftung · Schmidt Sciences</p>
+    
+  </div>
+</article>
+<article class="rs alt reveal" id="manifold-estimation">
+  <div class="rs-media twin"><img src="assets/img/paleo_a.png" alt="Manifold-Based Estimation"><img src="assets/img/paleo_b.png" alt="Manifold-Based Estimation"></div>
+  <div class="rs-body">
+    <span class="rs-num">02</span>
+    <h2>Manifold-Based Estimation</h2>
+    <p class="rs-tag">Provable-rate estimation of manifolds — and the geometry riding on them — from finite, noisy, high-dimensional data.</p>
+    
+<p>A longstanding methodological collaboration with
+<a href="https://sites.google.com/view/yariv-aizenbud/" target="_blank" rel="noopener">Yariv&nbsp;Aizenbud</a>
+(Tel-Aviv University) building the statistical and approximation-theoretic core of the
+<strong>Manifold Moving Least-Squares (MMLS)</strong> program. Given noisy samples of a
+low-dimensional manifold sitting in a high-dimensional space, we estimate the manifold
+itself &mdash; together with its tangent spaces and curvature &mdash; <em>directly</em>,
+without first doing dimension reduction, with linear cost in the ambient dimension and
+<strong>provable convergence rates</strong>.</p>
+<p>Recent work lifts a pointwise estimator to a global, smooth, Hausdorff-convergent
+manifold estimate, and connects the geometry back to concrete humanities questions such as
+the diachrony of Akkadian literature. Along the way the program has surfaced clean
+theoretical results &mdash; including a previously unnoticed equivalence between iterative
+least-squares regression and Principal Component Analysis.</p>
+
+    <div class="kws"><span class="kw">Moving Least-Squares</span><span class="kw">Optimal rates</span><span class="kw">Tangent & curvature estimation</span><span class="kw">Geodesic distances</span><span class="kw">LS–PCA equivalence</span></div>
+    <p class="rs-collab"><strong>Key collaborators:</strong> Yariv Aizenbud (TAU) · David Levin (TAU) · Ingrid Daubechies (Duke)</p>
+    
+    
+  </div>
+</article>
+<article class="rs  reveal" id="spectra">
+  <div class="rs-media "><img src="assets/img/inscriptions.png" alt="Hyperspectral Imaging of Inscriptions"></div>
+  <div class="rs-body">
+    <span class="rs-num">03</span>
+    <h2>Hyperspectral Imaging of Inscriptions</h2>
+    <p class="rs-tag">Non-invasive spectral imaging that both reveals unreadable ancient ink and characterizes the materials that made it.</p>
+    
+<p>The lab&rsquo;s imaging engine &mdash; the <em>Spectra</em> half of our name &mdash;
+documents inscriptions with <strong>multispectral (MSI)</strong> and
+<strong>hyperspectral / reflectance imaging spectroscopy (HSI/RIS)</strong>. Because a
+hyperspectral scan captures a full spectrum at every pixel, a single acquisition can both
+<strong>enhance legibility</strong> of faded or invisible ink and
+<strong>characterize materials</strong> (ink stratification, spectral clustering). This is
+the first hyperspectral-imaging lab for the Humanities in Israel, and the in-house data
+source for our paleography and reed-pen work.</p>
+<p>The approach has produced concrete discoveries &mdash; a previously unnoticed Iron-Age
+inscription on the reverse of Arad ostracon&nbsp;16, revealed via MSI, and a newly imaged
+Hebrew ostracon from Lachish. Planned expansion adds full VNIR&ndash;SWIR reflectance
+capability and a spectral database of Iron-Age inscriptions.</p>
+
+    <div class="kws"><span class="kw">MSI / HSI / RIS</span><span class="kw">VNIR–SWIR datacubes</span><span class="kw">PCA + MNF enhancement</span><span class="kw">Ink stratification</span><span class="kw">Spectral databases</span></div>
+    
+    
+    <a class="textlink rs-cta" href="imaging.html">See the Imaging Lab &amp; request documentation →</a>
+  </div>
+</article></div></section>
+
+<section class="section alt"><div class="wrap">
+  <h2 class="section-title reveal">Featured directions</h2>
+  <article class="feat-banner  reveal" id="onomastics"><div class="fb-media"><img src="assets/img/onomastics.png" alt="Onomastic Diversity &amp; Social Dynamics"></div><div class="fb-body"><span class="fb-kicker">Foundational result</span><h3>Onomastic Diversity &amp; Social Dynamics</h3>
+<p>A single, foundational result with an outsized reach. Borrowing diversity statistics from
+ecology &mdash; Hill numbers, evenness curves, and small-sample tests &mdash; we read
+<strong>social dynamics from the distribution of personal names</strong> preserved on Iron-Age
+Hebrew inscriptions and seals (<em>PNAS</em>, 2025). The Kingdom of Israel emerges as more
+cosmopolitan than Judah, with a capital&ndash;periphery inversion in late Judah.</p>
+<p>The method is deliberately general: it applies to any historical corpus of names, and the
+same mathematics later seeded a molecular-diversity biosignature for planetary missions in
+<em>Nature Astronomy</em> &mdash; a clean example of how a humanities question can grow a tool
+that travels far beyond its origin.</p>
+</div></article><article class="feat-banner flip reveal" id="art-investigation"><div class="fb-media"><img src="assets/img/proj_art_comparison.png" alt="Machine Learning in Art Investigation"></div><div class="fb-body"><h3>Machine Learning in Art Investigation</h3>
+<p>Self-supervised deep neural networks that separate the mixed X-ray images of
+double-sided paintings, recovering content hidden on the reverse. Our results on two panels
+of the <strong>Ghent Altarpiece</strong> improved markedly on prior attempts
+(<em>Science Advances</em>, 2019), with Ingrid&nbsp;Daubechies, Miguel&nbsp;Rodrigues, and the
+National Gallery&nbsp;London &mdash; the physics sibling of our inscription imaging.</p>
+</div></article>
+</div></section>
+
+<section class="section"><div class="wrap narrow">
+  <h2 class="section-title reveal">Also in the lab</h2>
+  <ul class="brief-list"><li class="reveal"><strong>Causal Philology.</strong> An empirical, causal-inference framework for how ancient written traditions evolve &mdash; bringing explicit causal reasoning to the study of textual change.</li><li class="reveal"><strong>Dating Akkadian literature.</strong> Continuous causal-probing to date Akkadian texts, and to audit what low-resource ancient-language language-models actually encode (with N.&nbsp;Wasserman & G.&nbsp;Stanovsky; Schmidt Sciences).</li><li class="reveal"><strong>Fractals via neural networks.</strong> A theory result: fractals from iterated function systems are representable by neural networks with O(k) parameters (JSAIT, 2020).</li></ul>
+</div></section>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="foot-word">Scripta<span class="slash">/</span>Spectra&nbsp;Lab</div>
+      <p class="foot-mission">The Scripta/Spectra Lab develops mathematics, statistics, and imaging for the study of human culture &mdash; reading ancient scripts, tracing how writing evolves, and recovering what the eye can no longer see &mdash; while letting the hard problems of humanistic data reshape the mathematics itself.</p>
+    </div>
+    <div class="foot-right">
+      <img src="assets/img/logo_mascot.png" alt="" class="foot-mascot">
+      <a class="foot-mail" href="mailto:barak.sober@mail.huji.ac.il">barak.sober@mail.huji.ac.il</a>
+      <div class="foot-affil">The Hebrew University of Jerusalem</div>
+      <div class="social"><a href="https://scholar.google.co.il/citations?user=tEwLrjIAAAAJ&hl=iw&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><img src="assets/img/icon_scholar.jpg" alt="Google Scholar"></a><a href="https://www.linkedin.com/in/baraksover/?originalSubdomain=il" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><img src="assets/img/icon_linkedin.png" alt="LinkedIn"></a><a href="https://www.facebook.com/barakino" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><img src="assets/img/icon_facebook.png" alt="Facebook"></a></div>
+    </div>
+  </div>
+  <div class="wrap foot-copy">© Barak Sober. Scripta/Spectra Lab.</div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

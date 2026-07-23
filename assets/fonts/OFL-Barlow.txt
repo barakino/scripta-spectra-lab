@@ -1,0 +1,11 @@
+The bundled Barlow web fonts (barlow-*.woff2) are used under the SIL Open Font
+License 1.1. Barlow is designed by Jeremy Tribby.
+
+Source: https://fonts.google.com/specimen/Barlow
+License: https://openfontlicense.org/  (SIL OFL 1.1)
+
+Why it's here: the live Wix site sets headings/name/nav in "DIN Next W01 Light",
+a proprietary font that cannot be redistributed. Barlow is an OFL-licensed,
+DIN-adjacent geometric grotesk used here as a license-clean visual substitute.
+You may swap in a licensed DIN Next if you own one — see wix-clone/css/style.css
+(the `--din` variable and the @font-face block).
