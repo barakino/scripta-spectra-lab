@@ -137,6 +137,15 @@ body.has-hero .nav{--sc:0;--navop:50%;--navblur:10px}
 .hl-txt{font-size:.92rem}
 .funders-sec{padding:3rem 0}
 
+/* ---- home: Center for Digital Humanities affiliation ---- */
+.affil-band{padding:2.6rem 0;background:var(--bg-alt);border-bottom:1px solid var(--line)}
+.affil-inner{text-align:center}
+.affil-text{color:var(--muted);max-width:60ch;margin:0 auto 1rem}
+.affil-text a{font-weight:600}
+.affil-logo{display:inline-block;max-width:300px;transition:.15s}
+.affil-logo img{width:100%;height:auto}
+.affil-logo:hover{opacity:.82;transform:translateY(-2px)}
+
 /* ---- home: principal investigator ---- */
 .pi-band{display:grid;grid-template-columns:250px 1fr;gap:2.6rem;align-items:center}
 .pi-photo{width:250px;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line)}
