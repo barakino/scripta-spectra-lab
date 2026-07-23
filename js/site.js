@@ -5,7 +5,8 @@
 
   function onScroll() {
     if (!nav || !hero) return;
-    if (window.scrollY > window.innerHeight * 0.7) nav.classList.add('solid');
+    // transparent only at the very top (over the hero); solidify as soon as we scroll
+    if (window.scrollY > 40) nav.classList.add('solid');
     else nav.classList.remove('solid');
   }
   if (hero) { window.addEventListener('scroll', onScroll, { passive: true }); onScroll(); }

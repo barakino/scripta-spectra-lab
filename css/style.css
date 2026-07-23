@@ -374,7 +374,7 @@ h1,h2,h3,h4{font-family:var(--disp);font-weight:400;line-height:1.15;letter-spac
   .about-photo img{max-width:280px}
 }
 @media (max-width:760px){
-  .burger{display:flex;order:-1}          /* menu button on the LEFT, brand on the right */
+  .burger{display:flex}          /* menu button on the right, brand on the left */
   .links{position:fixed;inset:68px 0 auto 0;flex-direction:column;gap:0;background:var(--bg);
     border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.3s;box-shadow:var(--shadow)}
   body.open .links{transform:none}
