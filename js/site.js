@@ -3,13 +3,18 @@
   var nav = document.getElementById('nav');
   var hero = document.body.classList.contains('has-hero');
 
-  function onScroll() {
-    if (!nav || !hero) return;
-    // transparent only at the very top (over the hero); solidify as soon as we scroll
-    if (window.scrollY > 40) nav.classList.add('solid');
-    else nav.classList.remove('solid');
+  // On hero pages the header fades in gradually as you scroll: transparent at the
+  // very top, fully solid by ~200px. (Non-hero pages are solid by default in CSS.)
+  var ticking = false;
+  function apply() {
+    var t = Math.min((window.scrollY || 0) / 200, 1);
+    nav.style.setProperty('--sc', t.toFixed(3));
+    ticking = false;
   }
-  if (hero) { window.addEventListener('scroll', onScroll, { passive: true }); onScroll(); }
+  function onScroll() {
+    if (nav && hero && !ticking) { window.requestAnimationFrame(apply); ticking = true; }
+  }
+  if (hero && nav) { window.addEventListener('scroll', onScroll, { passive: true }); apply(); }
 
   document.querySelectorAll('.links a').forEach(function (a) {
     a.addEventListener('click', function () { document.body.classList.remove('open'); });
