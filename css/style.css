@@ -299,6 +299,7 @@ body.has-hero .nav{--sc:0;--navop:50%;--navblur:10px}
 .al-name{font-family:var(--disp);font-weight:600}
 .al-deg{font-family:var(--disp);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;
   color:#fff;background:var(--green);padding:.1rem .45rem;border-radius:10px}
+.al-deg.staff{background:var(--teal)}
 .al-st{color:var(--muted);font-size:.85rem}
 .al-now{color:var(--teal-d);font-size:.9rem}
 .cv-pointer{color:var(--muted);font-size:.9rem;margin-top:1.2rem}
